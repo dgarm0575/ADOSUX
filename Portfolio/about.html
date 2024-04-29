@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">DG</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#home">School</a></li>
+            <li><a href="#Clubs">Clubs</a></li>
+            <li><a href="#Future">Future</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>ABOUT MY WEBSITE</h3>
+  <p><em>Features</em></p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Bootstrap</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="https://th.bing.com/th/id/OIP.Rf6FaPYWWrdk6YQTR0UFCwHaDt?w=338&h=174&c=7&r=0&o=5&pid=1.7" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Bootstrap allows for better website interactivity by including multiple features such as adjusting the size of the content of the website based on tab size and many other features.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Carousel</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="https://onaircode.com/wp-content/uploads/2017/11/Bootstrap-Carousel-Full-Screen.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>This website features a working bootstrap carousel on the home page which acts as a slideshow displaying 3 different images.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Gallery</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="https://th.bing.com/th/id/R.db53b61eb8a7dd324b7b608a3a262bab?rik=l2bNCn0EHZrhAg&riu=http%3a%2f%2fwww.hoxtongallery.com%2fwp-content%2fuploads%2f2017%2f10%2f2017-lindauer-install-6.jpg&ehk=qFN4CyApUglFPN9IsIK61C821j5hSHb0QZlPMzYB%2bqc%3d&risl=&pid=ImgRaw&r=0" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>This website also features a gallery composed of 10 different images with consistent sizing.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-1">
+  <h3 class="text-center">Education</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">School</a></li>
+    <li><a data-toggle="tab" href="#menu1">Club Activities</a></li>
+    <li><a data-toggle="tab" href="#menu2">Future Plans</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Student at Boise State University</h2><hr>
+      <ul>
+        <li>Class of 2024 // Renaissance High School</p>
+        <li>Graduated with Associate of Arts degree from Idaho State University</p>
+        <li>GPA // 3.7 Cumulative </p>
+        <li>SAT // 1210 Score</p>
+      </ul>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>High School Club Activities</h2><hr>
+      <ul>
+        <li>Ministry Club // Member</p>
+        <li>Construction // Participated in combine--Building sheds for veterans</p>
+        <li>Chess Club // Assisted setting up events</p>
+        <li>Student Council // Assisted in events</p>
+      </ul>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Future Education and Work</h2><hr>
+      <ul>
+        <li>Graduating from Boise State University with a Bachelor's in Computer Science</p>
+        <li>Hoping to achieve internships with different companies</p>
+        <li>Striving to becoming an accomplished software developer</p>
+      </ul>
+    </div>
+  </div>
+  
+  
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
