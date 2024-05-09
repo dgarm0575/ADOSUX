@@ -94,7 +94,7 @@
 <!-- Container (The Band Section) -->
 <div id="band" class="container-fluid text-center">
   <h3>DAVIS R GARMAN</h3>
-  <p><em>Nice to meet you!</em></p>
+  <p id="welcome"><em>Nice to meet you!</em></p>
   <p>Welcome to my website. Explore the about me, gallery, and contact pages on the navigation bar!</p>
   <br>
 </div>
@@ -138,6 +138,20 @@ $(document).ready(function(){
     } // End if
   });
 })
+
+//check to see if the key user exists
+if(localStorage.getItem("user"))
+            {
+                //if true, welcome the user back to the site
+                $("#welcome").text("Nice to meet you, " + localStorage.user);
+            }
+            else
+            {
+                //otherwise, ask the user their name, store their name, and welcome them!
+                var name = prompt("What is your name?");
+                localStorage.setItem("user", name);
+                $("#welcome").text("Welcome to my site, " + name);
+            }
 </script>
 
 </body>
